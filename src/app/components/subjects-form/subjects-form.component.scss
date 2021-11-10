@@ -1,0 +1,109 @@
+@import '~@angular/material/theming';
+
+.clickable {
+    cursor: pointer;
+    background-color: #0000009d;
+
+    &:hover {
+        @include mat-elevation(8);
+        box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.486);
+    }
+}
+
+* {
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+    margin: 0 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.rod {
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+/* Style the counter cards */
+mat-card {
+    color: aqua;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    box-shadow: 0 4px 8px 0 rgba(163, 163, 163, 0.486);
+    padding: 10px;
+    text-align: center;
+    background-color: #0707079d;
+}
+
+mat-toolbar {
+    color: rgb(81, 235, 255);
+    font-size: 2rem;
+    text-transform: uppercase;
+    background-color: #010a0a00;
+}
+
+h2 {
+    margin-left: 200px;
+}
+
+mat-card-title {
+    padding-top: 50px;
+    font-size: xx-large;
+    color: rgb(251, 255, 31);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+
+label {
+    color: rgb(223, 223, 223);
+    margin: 50px;
+    font-weight: bolder;
+}
+
+mat-form-field {
+    color: rgb(223, 223, 223);
+    width: 60%;
+}
+
+input {
+    color: #fff129f6;
+    border-radius: 50px;
+}
+
+button {
+    background-color: #28ec38b6;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(131, 131, 131);
+    opacity: 1;
+    /* Firefox */
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 70px;
+    }
+}

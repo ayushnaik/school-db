@@ -1,0 +1,68 @@
+<mat-card class="rod">
+  <mat-card-title> Students Form </mat-card-title>
+  <div>
+    <form>
+      <div>
+        <label>Roll Number: </label>
+        <mat-form-field appearance="outline">
+          <input
+            matInput
+            placeholder="Enter a Roll Number"
+            name="rollNo"
+            [(ngModel)]="rollNo"
+            (ngModelChange)="validate()"
+          />
+        </mat-form-field>
+      </div>
+      <div>
+        <label>Student Name: </label>
+        <mat-form-field appearance="outline">
+          <input
+            matInput
+            placeholder="Enter a Student Name"
+            name="stdName"
+            [(ngModel)]="stdName"
+            (ngModelChange)="validate()"
+          />
+        </mat-form-field>
+      </div>
+      <div>
+        <label>Student Address: </label>
+        <mat-form-field appearance="outline">
+          <input
+            matInput
+            placeholder="Enter a Student Address"
+            name="stdAddress"
+            [(ngModel)]="stdAddress"
+            (ngModelChange)="validate()"
+          />
+        </mat-form-field>
+      </div>
+      <div>
+        <label>Student Phone No.: </label>
+        <mat-form-field appearance="outline">
+          <input
+            matInput
+            placeholder="Enter a Student Phone No."
+            name="stdPhNo"
+            [(ngModel)]="stdPhNo"
+            (ngModelChange)="validate()"
+          />
+        </mat-form-field>
+      </div>
+      <div>
+        <label>Student Class: </label>
+        <mat-form-field appearance="outline">
+          <input
+            matInput
+            placeholder="Enter a Student Class"
+            name="stdClass"
+            [(ngModel)]="stdClass"
+            (ngModelChange)="validate()"
+          />
+        </mat-form-field>
+      </div>
+    </form>
+    <button mat-raised-button (click)="saveStudents()">Save</button>
+  </div>
+</mat-card>

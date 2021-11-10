@@ -1,0 +1,60 @@
+<br /><br /><br /><br />
+<div>
+  <mat-card class="product-card">
+    <mat-card-title> Students Details </mat-card-title>
+    <div *ngFor="let student of students">
+      <span>
+        <table>
+          <th>Roll Number:</th>
+          <td>{{ student.rollNo }}</td>
+          <th>Student Name:</th>
+          <td>{{ student.stdName }}</td>
+          <th>Student Address:</th>
+          <td>{{ student.stdAddress }}</td>
+          <th>Student Phone Number:</th>
+          <td>{{ student.stdPhNo }}</td>
+          <th>Student Class:</th>
+          <td>{{ student.stdClass }}</td>
+        </table>
+      </span>
+    </div>
+  </mat-card>
+  <mat-card class="product-card">
+    <mat-card-title> Subjects Details </mat-card-title>
+    <div *ngFor="let subject of subjects">
+      <span>
+        <tr>
+          <th>Subject Code:</th>
+          <td>{{ subject.subCode }}</td>
+          <th>Subject Name:</th>
+          <td>{{ subject.subName }}</td>
+          <th>Subject Maximum Marks:</th>
+          <td>{{ subject.maxMarks }}</td>
+          <th>Subject Minimum Marks:</th>
+          <td>{{ subject.minMarks }}</td>
+          <th>Subject Class:</th>
+          <td>{{ subject.subClass }}</td>
+        </tr>
+      </span>
+    </div>
+  </mat-card>
+  <mat-card class="product-card">
+    <mat-card-title> Teachers Details </mat-card-title>
+    <div *ngFor="let teacher of teachers">
+      <span>
+        <tr>
+          <th>Teacher Id:</th>
+          <td>{{ teacher.teaId }}</td>
+          <th>Teacher Name:</th>
+          <td>{{ teacher.teaName }}</td>
+          <th>Teacher Address:</th>
+          <td>{{ teacher.teaAddress }}</td>
+          <th>Teacher Phone Number:</th>
+          <td>{{ teacher.teaPhNo }}</td>
+          <th>Teacher Subject:</th>
+          <td>{{ teacher.teaSubjects }}</td>
+        </tr>
+      </span>
+    </div>
+  </mat-card>
+</div>

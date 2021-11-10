@@ -1,0 +1,27 @@
+<mat-toolbar>
+  <mat-sidenav-container>
+    <mat-nav-list>
+      <mat-list-item>
+        <mat-icon>dashboard</mat-icon>
+      </mat-list-item>
+      <mat-list-item routerLink="/home">
+        <mat-icon>home</mat-icon>
+      </mat-list-item>
+      <mat-list-item routerLink="/details">
+        <mat-icon>personal_video</mat-icon>
+      </mat-list-item>
+      <mat-list-item routerLink="/students-form">
+        <mat-icon>school</mat-icon>
+      </mat-list-item>
+      <mat-list-item routerLink="/subjects-form">
+        <mat-icon>perm_media</mat-icon>
+      </mat-list-item>
+      <mat-list-item routerLink="/teachers-form">
+        <mat-icon>supervisor_account</mat-icon>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav-container>
+  <h1>School App</h1>
+</mat-toolbar>
+
+<router-outlet></router-outlet>

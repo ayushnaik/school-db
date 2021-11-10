@@ -1,0 +1,86 @@
+@import '~@angular/material/theming';
+
+.clickable {
+    cursor: pointer;
+    color: rgb(211, 88, 7);
+
+    &:hover {
+        text-decoration: underline;
+        @include mat-elevation(8);
+        background-color: #4645455b;
+        color: rgba(241, 255, 45, 0.795);
+        box-shadow: 4px 8px 10px 0 rgb(212, 248, 127);
+    }
+}
+
+* {
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+/* Float four columns side by side */
+.column {
+    margin-left: 13px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    float: left;
+    width: 32%;
+    padding: 0 2px;
+}
+
+.m {
+    margin-left: 10px;
+}
+
+.h {
+    padding: 150px;
+}
+
+.row {
+    margin-left: 70px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the counter cards */
+mat-card {
+    justify-content: center;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.486);
+    padding: 10px;
+    text-align: center;
+    background-color: #0000008a;
+}
+
+mat-toolbar {
+    color: rgb(211, 88, 7);
+    text-transform: uppercase;
+    background-color: #010a0a00;
+}
+
+h2 {
+    margin-left: 200px;
+}
+
+mat-card-title {
+    padding-top: 50px;
+    font-size: xx-large;
+    color: rgb(94, 96, 223);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 70px;
+    }
+}

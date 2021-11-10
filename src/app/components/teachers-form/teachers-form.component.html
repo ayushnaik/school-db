@@ -1,0 +1,68 @@
+<mat-card class="rod">
+  <mat-card-title> Teachers Form </mat-card-title>
+  <div>
+    <form>
+      <div>
+        <label>Teacher's Id</label>
+        <mat-form-field appearance="outline">
+          <input
+            matInput
+            placeholder="Enter a Teacher's Id"
+            name="teaId"
+            [(ngModel)]="teaId"
+            (ngModelChange)="validate()"
+          />
+        </mat-form-field>
+      </div>
+      <div>
+        <label>Teacher Name</label>
+        <mat-form-field appearance="outline">
+          <input
+            matInput
+            placeholder="Enter a Teacher Name"
+            name="teaName"
+            [(ngModel)]="teaName"
+            (ngModelChange)="validate()"
+          />
+        </mat-form-field>
+      </div>
+      <div>
+        <label>Teacher Address</label>
+        <mat-form-field appearance="outline">
+          <input
+            matInput
+            placeholder="Enter a Teacher Address"
+            name="teaAddress"
+            [(ngModel)]="teaAddress"
+            (ngModelChange)="validate()"
+          />
+        </mat-form-field>
+      </div>
+      <div>
+        <label>Teacher Phone Number</label>
+        <mat-form-field appearance="outline">
+          <input
+            matInput
+            placeholder="Enter a Teacher Phone Number"
+            name="teaPhNo"
+            [(ngModel)]="teaPhNo"
+            (ngModelChange)="validate()"
+          />
+        </mat-form-field>
+      </div>
+      <div>
+        <label>Teacher Subjects</label>
+        <mat-form-field appearance="outline">
+          <input
+            matInput
+            placeholder="Enter a Teacher Subjects"
+            name="teaSubjects"
+            [(ngModel)]="teaSubjects"
+            (ngModelChange)="validate()"
+          />
+        </mat-form-field>
+      </div>
+    </form>
+    <button mat-raised-button (click)="saveTeachers()">Save</button>
+  </div>
+</mat-card>

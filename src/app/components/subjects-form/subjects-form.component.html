@@ -1,0 +1,68 @@
+<mat-card class="rod">
+  <mat-card-title> Subjects Form </mat-card-title>
+  <div>
+    <form>
+      <div>
+        <label>Subject Code</label>
+        <mat-form-field appearance="outline" color="#fff">
+          <input
+            matInput
+            placeholder="Enter a Subject Code"
+            name="subCode"
+            [(ngModel)]="subCode"
+            (ngModelChange)="validate()"
+          />
+        </mat-form-field>
+      </div>
+      <div>
+        <label>Subject Name</label>
+        <mat-form-field appearance="outline">
+          <input
+            matInput
+            placeholder="Enter a Subject Name"
+            name="subName"
+            [(ngModel)]="subName"
+            (ngModelChange)="validate()"
+          />
+        </mat-form-field>
+      </div>
+      <div>
+        <label>Maximum Marks</label>
+        <mat-form-field appearance="outline">
+          <input
+            matInput
+            placeholder="Enter a Maximum Marks"
+            name="maxMarks"
+            [(ngModel)]="maxMarks"
+            (ngModelChange)="validate()"
+          />
+        </mat-form-field>
+      </div>
+      <div>
+        <label>Minimum Marks</label>
+        <mat-form-field appearance="outline">
+          <input
+            matInput
+            placeholder="Enter a Minimum Marks"
+            name="minMarks"
+            [(ngModel)]="minMarks"
+            (ngModelChange)="validate()"
+          />
+        </mat-form-field>
+      </div>
+      <div>
+        <label>Subject Class</label>
+        <mat-form-field appearance="outline">
+          <input
+            matInput
+            placeholder="Enter a Subject Class"
+            name="subClass"
+            [(ngModel)]="subClass"
+            (ngModelChange)="validate()"
+          />
+        </mat-form-field>
+      </div>
+    </form>
+    <button mat-raised-button (click)="saveSubjects()">Save</button>
+  </div>
+</mat-card>
