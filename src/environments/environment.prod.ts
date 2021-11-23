@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  BASE_URL: 'https://schooldb-server.herokuapp.com'
 };
